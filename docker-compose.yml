@@ -1,0 +1,28 @@
+version: "3"
+services:
+    node-latest:
+        build:
+            context: .
+            dockerfile: docker/Dockerfile-node-latest
+        volumes:
+            - ./:/home/node/app
+
+    node7:
+        build:
+            context: .
+            dockerfile: docker/Dockerfile-node-7
+        volumes:
+            - ./:/home/node/app
+
+    node6:
+        build:
+            context: .
+            dockerfile: docker/Dockerfile-node-6
+        volumes:
+            - ./:/home/node/app
+  #
+  #
+  # nicklasnode:
+  #   image: "nicklas766/my_image"
+  #   ports:
+  #       - "1336:1336"
