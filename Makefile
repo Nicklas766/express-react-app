@@ -153,7 +153,7 @@ test3: docker
 start-docker: docker
 	@$(call HELPTEXT,$@)
 	docker build -t my_image2 .
-	docker run -p 49160:8080 -d my_image2
+	docker run -p 1336:1336 -d my_image2
 # target: doc                - Generate documentation.
 .PHONY: doc
 doc:
