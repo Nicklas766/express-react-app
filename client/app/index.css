@@ -26,6 +26,7 @@ p {
 
 .middle-container {
     min-height: 600px;
+    width:100%;
 }
 /* HEADER */
 
@@ -47,4 +48,76 @@ footer {
     background: #24292E;
     width: 100%;
     color: #EDEDEE;
+}
+
+/* REPORT */
+
+.report-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reportText {
+    width: 65%;
+    text-align: left;
+}
+
+
+/* chat message */
+
+.message {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 5px;
+    text-align:left;
+    width:100%;
+}
+
+.message .avatar {
+    width: 20%;
+}
+
+.message .text {
+    width: 90%;
+}
+
+/* LOADER FROM https://stackoverflow.com/questions/13014808/is-there-anyway-to-animate-an-ellipsis-with-css-animations */
+.one {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.0s;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.0s;
+}
+
+.two {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.2s;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.2s;
+}
+
+.three {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.3s;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.3s;
+}
+
+@-webkit-keyframes dot {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

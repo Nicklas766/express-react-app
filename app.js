@@ -24,6 +24,7 @@ app.use('/api', api);
 /* Routes for client. */
 app.use(express.static(path.join(__dirname, 'client/public')));
 app.use('/about', express.static(path.join(__dirname, 'client/public')));
+app.use('/chat', express.static(path.join(__dirname, 'client/public')));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

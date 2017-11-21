@@ -12,6 +12,9 @@ const Header = (props) => (
             <NavLink activeClassName='active' to='/about'>
                 About
             </NavLink>
+            <NavLink activeClassName='active' to='/chat'>
+                Chat
+            </NavLink>
         </div>
     </div>
 );
