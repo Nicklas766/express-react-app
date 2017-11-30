@@ -1,4 +1,4 @@
-FROM node:6
+FROM node:alpine
 
 # Create app directory
 WORKDIR /usr/src/app
@@ -9,10 +9,8 @@ COPY package.json .
 # COPY package.json package-lock.json ./
 
 RUN npm install
-ENV DBWEBB_PORT=1336
 
 # Bundle app source
 COPY . .
 
-EXPOSE 8080
 CMD [ "npm", "start" ]
